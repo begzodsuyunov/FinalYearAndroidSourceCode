@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="backgroundColors">
+        <item>#EB1807</item>
+        <item>#FF8A00</item>
+        <item>#F8C200</item>
+        <item>#138A00</item>
+        <item>#006FFA</item>
+        <item>#9846FF</item>
+        <item>#E20094</item>
+        <item>#2E525280</item>
+    </array>
+    <array name="textColors">
+        <item>#FF4343</item>
+        <item>#FF8A00</item>
+        <item>#FFD600</item>
+        <item>#49D61E</item>
+        <item>#2F8BFF</item>
+        <item>#AB68FF</item>
+        <item>#FF36C7</item>
+        <item>#F5F5F5</item>
+    </array>
+    <color name="settings_background_color">@color/zm_v1_black_200</color>
+    <color name="settings_background_normal_color">@color/zm_v1_black_200</color>
+    <color name="settings_background_selected_color">@color/zm_v1_gray_500_alpha15</color>
+    <color name="settings_profile_background">@color/zm_v1_black_alpha15</color>
+    <color name="zm_add_pending_contact_system_message">@color/zm_v1_orange_50_alpha29</color>
+    <color name="zm_addon_title_github_bg">@color/zm_v1_gray_F900</color>
+    <color name="zm_addon_title_gitlab_bg">@color/zm_v1_gray_F900</color>
+    <color name="zm_addon_title_jira_bg">@color/zm_v1_gray_F900</color>
+    <color name="zm_addon_title_normal_bg">@color/zm_v1_gray_F900</color>
+    <color name="zm_bg_color_popup_window">#242424</color>
+    <color name="zm_chat_msg_bg_e2e_success_normal_19884">@color/zm_v1_blue_C600</color>
+    <color name="zm_chat_typing_bg">@color/zm_v1_gray_1400</color>
+    <color name="zm_chat_typing_text">@color/zm_v1_white_alpha54</color>
+    <color name="zm_dashboard_tip_icon">@color/zm_v1_white</color>
+    <color name="zm_im_search_shadow">@color/zm_v1_white_alpha9</color>
+    <color name="zm_pbx_sms_bg_receive">@color/zm_v1_gray_F900</color>
+    <color name="zm_pbx_sms_bg_sent">@color/zm_v1_green_800</color>
+    <color name="zm_settings_more_background_color">@color/zm_v1_black_200</color>
+    <color name="zm_settings_more_header_color">@color/zm_v1_gray_500_alpha15</color>
+    <color name="zm_v2_arrow">@color/zm_v1_white_500</color>
+    <color name="zm_v2_arrow_right">@color/zm_v1_gray_D300</color>
+    <color name="zm_v2_btn_gray_bkg">@color/zm_v1_white_alpha18</color>
+    <color name="zm_v2_chat_audio_record_bg">@color/zm_v1_gray_1400</color>
+    <color name="zm_v2_chat_audio_record_text_color">@color/zm_v1_white</color>
+    <color name="zm_v2_chat_audio_record_title_text_color">@color/zm_v1_white_alpha54</color>
+    <color name="zm_v2_filter_icon_bg">@color/zm_v1_white_alpha54</color>
+    <color name="zm_v2_secondary_btn_disabled">#17FFFFFF</color>
+    <color name="zm_v2_secondary_btn_focused">#17FFFFFF</color>
+    <color name="zm_v2_secondary_btn_normal">#17FFFFFF</color>
+    <color name="zm_v2_secondary_btn_pressed">#2EFFFFFF</color>
+    <color name="zm_v2_svg_avatar_1">@color/zm_v1_white_alpha9</color>
+    <color name="zm_v2_svg_avatar_2">@color/zm_v1_gray_1400</color>
+    <color name="zm_v2_svg_avatar_3">@color/zm_v1_white_500</color>
+    <color name="zm_v2_svg_reaction">@color/zm_v1_white_alpha54</color>
+    <color name="zm_v2_svg_sip_avatar_bg1">@color/zm_v1_blue_B400_alpha3</color>
+    <color name="zm_v2_svg_sip_avatar_bg2">@color/zm_v1_blue_B400_alpha8</color>
+    <color name="zm_v2_tab_bg_normal">@color/zm_v1_gray_B600</color>
+    <color name="zm_v2_tab_bg_select">@color/zm_v1_white_500</color>
+    <color name="zm_v2_tab_path_normal">@color/zm_v1_white</color>
+    <color name="zm_v2_tab_path_normal_alpha">@color/zm_v1_white_A100_alpha50</color>
+    <color name="zm_v2_tab_path_selected">@color/zm_v1_white_500</color>
+    <color name="zm_v2_tab_tablet_selected">@color/zm_v1_white</color>
+    <color name="zm_v2_title_tab_textcolor_select">@color/zm_v1_white_500</color>
+    <color name="zm_v2_title_tab_textcolor_select_loading">@color/zm_v1_white_alpha40</color>
+    <color name="zm_v2_title_tab_textcolor_unselect">@color/zm_v1_white_alpha54</color>
+    <color name="zm_v2_title_tab_textcolor_unselect_loading">@color/zm_v1_gray_D300</color>
+    <color name="zm_v2_voice_talk_cancel_bg">@color/zm_v1_white_500</color>
+    <color name="zm_v2_voice_talk_play_icon_bg">@color/zm_v1_white_500</color>
+    <color name="zm_v2_whiteboard_error_bg">@color/zm_v1_purple_50</color>
+    <color name="zm_v2_whiteboard_progressbar_tint">@color/zm_v1_white</color>
+    <color name="zm_v2_whiteboard_text_black">@color/zm_v1_white_500</color>
+    <color name="zm_v2_whiteboard_toolbar_icon_black_border_selected">@color/zm_v1_gray_E700</color>
+    <color name="zm_v2_whiteboard_toolbar_icon_black_normal">@color/zm_v1_gray_E900</color>
+    <color name="zm_v2_whiteboard_toolbar_icon_border">@color/zm_v1_purple_50</color>
+    <color name="zm_v2_whiteboard_toolbar_icon_default_gray">@color/zm_v1_white_500</color>
+</resources>

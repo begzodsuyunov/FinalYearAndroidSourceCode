@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    android:label="Unscramble App"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.learningcenter.ui.HomePageFragment"
+        android:label="Everest"
+        tools:layout="@layout/fragment_home_page">
+        <action
+            android:id="@+id/action_homePageFragment_to_wordListFragment"
+            app:destination="@id/wordListFragment"
+            />
+        <action
+            android:id="@+id/action_homePageFragment_to_unscrambledAppFragment"
+            app:destination="@id/unscrambledAppFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_fileSharingFragment"
+            app:destination="@id/fileSharingFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_videoCallFragment"
+            app:destination="@id/videoCallFragment"
+            app:popUpTo="@id/homePageFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_homePageFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordListFragment"
+        android:name="com.example.learningcenter.ui.WordListFragment"
+        android:label="Words"
+        tools:layout="@layout/fragment_word_list">
+        <action
+            android:id="@+id/action_wordListFragment_to_addWordFragment"
+            app:destination="@id/addWordFragment" />
+        <action
+            android:id="@+id/action_wordListFragment_to_wordDetailFragment"
+            app:destination="@id/wordDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWordFragment"
+        android:name="com.example.learningcenter.ui.AddWordFragment"
+        android:label="{title}">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="word_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_addWordFragment_to_wordListFragment"
+            app:destination="@id/wordListFragment"
+            app:popUpTo="@id/wordListFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addWordFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordDetailFragment"
+        android:name="com.example.learningcenter.ui.WordDetailFragment"
+        android:label="Word Details"
+        tools:layout="@layout/fragment_word_detail">
+        <action
+            android:id="@+id/action_wordDetailFragment_to_addWordFragment"
+            app:destination="@id/addWordFragment" />
+        <argument
+            android:name="word_id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/unscrambledAppFragment"
+        android:name="com.example.learningcenter.ui.UnscrambledAppFragment"
+        android:label="Unscramble App" >
+        <action
+            android:id="@+id/action_unscrambledAppFragment_to_unscrambleAppStatisticsFragment"
+            app:destination="@id/unscrambleAppStatisticsFragment" />
+        <action
+            android:id="@+id/action_unscrambledAppFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fileSharingFragment"
+        android:name="com.example.learningcenter.ui.FileSharingFragment"
+        android:label="Resources"
+        tools:layout="@layout/fragment_file_sharing" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.learningcenter.ui.PaymentFragment"
+        android:label="Payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_processPaymentFragment"
+            app:destination="@id/processPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/processPaymentFragment"
+        android:name="com.example.learningcenter.ui.ProcessPaymentFragment"
+        android:label="Payment Process"
+        tools:layout="@layout/fragment_process_payment" />
+    <fragment
+        android:id="@+id/unscrambleAppStatisticsFragment"
+        android:name="com.example.learningcenter.ui.UnscrambleAppStatisticsFragment"
+        android:label="Statatistics"
+        tools:layout="@layout/fragment_unscramble_app_statistics" />
+    <fragment
+        android:id="@+id/videoCallFragment"
+        android:name="com.example.learningcenter.ui.VideoCallFragment"
+        android:label="Video Chat"
+        tools:layout="@layout/fragment_video_call" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.learningcenter.ui.LoginFragment"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+</navigation>

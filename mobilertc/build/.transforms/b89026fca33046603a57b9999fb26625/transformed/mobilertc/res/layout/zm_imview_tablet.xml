@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/zm_v2_tab"
+        >
+        <com.zipow.videobox.navigation.ZMNavigationRailView
+            style="@style/ZmNavigationRailView"
+            android:id="@+id/navigation_rail"
+            android:layout_width="@dimen/zm_tablet_navigation_bar_width"
+            android:layout_height="0dp"
+            android:paddingLeft="@dimen/zm_tablet_navigation_bar_padding"
+            android:paddingRight="@dimen/zm_tablet_navigation_bar_padding"
+            android:layout_weight="1"
+            app:elevation="0dp"
+            app:menuGravity="center"
+            app:menu="@menu/zm_navigation_rail_menu"
+            app:labelVisibilityMode="labeled"
+            />
+    </LinearLayout>
+
+    <us.zoom.androidlib.widget.ZMViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </us.zoom.androidlib.widget.ZMViewPager>
+</merge>
